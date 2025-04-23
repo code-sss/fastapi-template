@@ -1,0 +1,15 @@
+{
+    "name": "FastAPI DevContainer",
+    "image": "mcr.microsoft.com/devcontainers/python:1-3.13-bookworm",
+    "runArgs": [
+        "--gpus",
+        "all"
+    ],
+    "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt",
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "extensions": [
+        "eamodio.gitlens"
+    ]
+}
