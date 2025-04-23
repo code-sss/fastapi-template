@@ -1,0 +1,22 @@
+[tool.black]
+line-length = 88
+target-version = ["py313"]
+
+[tool.poetry]
+name = "fastapi-template"
+version = "0.1.0"
+description = "A FastAPI template project"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+fastapi = "*"
+uvicorn = {extras = ["standard"], version = "*"}
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+black = "*"
+flake8 = "*"
+mypy = "*"
+pylint = "*"
+pre-commit = "*"
