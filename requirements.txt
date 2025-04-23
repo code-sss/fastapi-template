@@ -1,0 +1,13 @@
+# Development
+black
+flake8
+mypy
+pylint
+pre-commit
+
+# Application
+fastapi
+uvicorn[standard]
+
+# Testing
+pytest
