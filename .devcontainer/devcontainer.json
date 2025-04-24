@@ -5,11 +5,12 @@
         "--gpus",
         "all"
     ],
-    "postCreateCommand": "pip install --upgrade pip && pip install poetry && poetry install",
-    "settings": {
-        "terminal.integrated.defaultProfile.linux": "bash"
-    },
-    "extensions": [
-        "eamodio.gitlens"
-    ]
+    "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "eamodio.gitlens"
+            ]
+        }
+    }
 }

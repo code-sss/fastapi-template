@@ -11,3 +11,4 @@ uvicorn[standard]
 
 # Testing
 pytest
+httpx
