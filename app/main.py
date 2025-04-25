@@ -1,8 +1,8 @@
-from typing import Dict
 from fastapi import FastAPI
 
 app = FastAPI()
 
+
 @app.get("/")
-def read_root() -> Dict[str, str]:
+def read_root() -> dict[str, str]:
     return {"message": "Hello, World!"}

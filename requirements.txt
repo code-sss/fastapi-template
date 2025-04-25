@@ -1,9 +1,8 @@
 # Development
-black
-flake8
+ruff
 mypy
-pylint
 pre-commit
+bandit
 
 # Application
 fastapi

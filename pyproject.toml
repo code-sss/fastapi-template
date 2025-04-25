@@ -1,3 +1,27 @@
-[tool.black]
-line-length = 88
-target-version = ["py313"]
+[tool.ruff]
+target-version = "py313"
+line-length = 120
+
+[tool.ruff.format]
+docstring-code-format = true
+skip-magic-trailing-comma = true
+
+[tool.ruff.lint]
+extend-select = ["B", "C", "D", "Q", "S", "UP"]
+extend-ignore = ["E501", "D100", "D103", "D104"]
+unfixable = ["B"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["E402"]
+"**/{tests,docs,tools}/*" = ["E402", "S101"]
+
+[tool.mypy]
+python_version = "3.13"
+
+[tool.bandit]
+exclude_dirs = ["tests", "docs", "tools"]
+tests = ["B201", "B301"]
+skips = ["B101", "B601"]
